@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa; /* nền dịu mắt */
+}
+
+.container {
+    max-width: 650px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Form nhập liệu */
+.form-card {
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin: 0 auto 30px auto;
+    max-width: 600px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.form-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.form-card label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 15px;
+}
+
+/* Input và button rộng bằng nhau */
+.form-card input,
+.form-card button {
+    display: block;          /* mỗi phần tử thành khối */
+    width: 100%;             /* chiếm hết chiều rộng form */
+    max-width: 100%;
+    box-sizing: border-box;  /* padding + border trong width */
+    padding: 15px 18px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+/* Input riêng */
+.form-card input {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-card input:focus {
+    border-color: #a3c4f3;
+    box-shadow: 0 0 8px rgba(163,196,243,0.4);
+    outline: none;
+}
+
+/* Button riêng */
+.form-card button {
+    background-color: #a3c4f3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.form-card button:hover {
+    background-color: #7fa9e1;
+    transform: translateY(-2px);
+}
+
+/* Hộp kết quả */
+.result-box {
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: left;
+    width: 400px; /* nhỏ hơn form */
+    margin: 0 auto 30px auto; /* căn giữa và cách dưới */
+}
+
+.result-box p {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.result-box strong {
+    color: #333;
+}
