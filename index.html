@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Tiến Trình Học Theo Tuần</title>
-    <!-- Đổi sang font Script Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body {
@@ -34,7 +33,7 @@
             display: flex;
             flex-direction: column;
             max-width: 1200px;
-            margin: 10px auto 0 auto; /* Đẩy lên trên một chút */
+            margin: 10px auto 0 auto;
             height: 80vh;
         }
         .intro {
@@ -89,7 +88,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            /* KHÔNG overflow: hidden ở đây */
         }
         ul.menu li a,
         ul.menu li a.disabled {
@@ -102,7 +100,7 @@
             width: 100%;
             border-radius: 10px;
             position: relative;
-            overflow: hidden; /* Thêm ở đây để cắt ruy băng theo bo góc */
+            overflow: hidden;
         }
         ul.menu li a {
             background: #e3eafc;
@@ -131,11 +129,11 @@
         }
         ul.menu li a.disabled .ribbon {
             position: absolute;
-            left: -20px;   /* Kéo rộng ra ngoài viền bo góc */
-            right: -20px;  /* Kéo rộng ra ngoài viền bo góc */
-            width: calc(100% + 40px); /* Đảm bảo ruy băng dài hơn ô */
+            left: -20px; 
+            right: -20px; 
+            width: calc(100% + 40px);
             height: 28px;
-            z-index: 2; /* Đảm bảo ruy băng nằm trên chữ tuần */
+            z-index: 2;
             pointer-events: none;
             border-radius: 0;
             box-shadow: none;
@@ -237,7 +235,7 @@
         }
     </style>
 </head>
-<body style="padding-top: 10px;"> <!-- Giảm padding-top để đẩy lên trên -->
+<body style="padding-top: 10px;">
     <div class="main-layout">
         <div class="intro">
             <h1>Lập Trình WEB</h1>
@@ -246,12 +244,7 @@
         <div class="menu-wrapper">
             <ul class="menu">
                 <li><a href="https://tdhung.infinityfree.me/">Tuần 1</a></li>
-                <li><a class="disabled">
-        <div class="ribbon r1"><span>CẢNH BÁO - KHÔNG ĐƯỢC TRUY CẬP</span></div>
-        <div class="ribbon r2"><span>CẢNH BÁO - KHÔNG ĐƯỢC TRUY CẬP</span></div>
-        <div class="ribbon r3"><span>CẢNH BÁO - KHÔNG ĐƯỢC TRUY CẬP</span></div>
-        <span class="week-label">Tuần 2</span>
-    </a></li>
+                <li><a href="https://tdhung.infinityfreeapp.com/?i=1">Tuần 2</a></li>
     <li><a class="disabled">
         <div class="ribbon r1"><span>CẢNH BÁO - KHÔNG ĐƯỢC TRUY CẬP</span></div>
         <div class="ribbon r2"><span>CẢNH BÁO - KHÔNG ĐƯỢC TRUY CẬP</span></div>
@@ -325,7 +318,7 @@
         font-family: 'Pacifico',cursive;
         opacity: 0.8;
         z-index: 999;
-        bottom: 8px; /* Căn cách đáy web một khoảng vừa phải */
+        bottom: 8px;
         pointer-events: none;
     ">
         Update is incoming
